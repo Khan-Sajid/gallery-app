@@ -49,6 +49,7 @@ export const MainComponent = (props: { ImagesData: ImageDataType[] }) => {
 
   useEffect(() => {
     if (searchFor) {
+      window.scroll(0, 0);
       (async () => {
         setIsLoading(true);
         const searchResponse = await searchImages({
